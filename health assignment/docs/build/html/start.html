@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting Started &#8212; Healthcare Management System 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=8d563738"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Application Overview" href="app.html" />
+    <link rel="prev" title="Healthcare Management System Documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
+<section id="installation-steps">
+<h2>Installation Steps<a class="headerlink" href="#installation-steps" title="Link to this heading">¶</a></h2>
+<p>Follow these steps to set up and run the Healthcare Management System:</p>
+<section id="step-1-navigate-to-project-directory">
+<h3>Step 1: Navigate to Project Directory<a class="headerlink" href="#step-1-navigate-to-project-directory" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/workspaces/cognizantaimlapr2026/health assignment&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="step-2-create-virtual-environment">
+<h3>Step 2: Create Virtual Environment<a class="headerlink" href="#step-2-create-virtual-environment" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>healthenv
+</pre></div>
+</div>
+</section>
+<section id="step-3-activate-virtual-environment">
+<h3>Step 3: Activate Virtual Environment<a class="headerlink" href="#step-3-activate-virtual-environment" title="Link to this heading">¶</a></h3>
+<p>On Linux/Mac:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>healthenv/bin/activate
+</pre></div>
+</div>
+<p>On Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>healthenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</pre></div>
+</div>
+</section>
+<section id="step-4-upgrade-pip">
+<h3>Step 4: Upgrade pip<a class="headerlink" href="#step-4-upgrade-pip" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</pre></div>
+</div>
+</section>
+<section id="step-5-install-project-with-dependencies">
+<h3>Step 5: Install Project with Dependencies<a class="headerlink" href="#step-5-install-project-with-dependencies" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</pre></div>
+</div>
+<p>This installs the healthcare project and required dependencies (faker) from pyproject.toml.</p>
+</section>
+<section id="step-6-run-the-application">
+<h3>Step 6: Run the Application<a class="headerlink" href="#step-6-run-the-application" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>src
+python<span class="w"> </span>app.py
+</pre></div>
+</div>
+</section>
+</section>
+<section id="complete-quick-setup">
+<h2>Complete Quick Setup<a class="headerlink" href="#complete-quick-setup" title="Link to this heading">¶</a></h2>
+<p>Run this one-liner to set up everything:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/workspaces/cognizantaimlapr2026/health assignment&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>healthenv<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>healthenv/bin/activate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>src<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>app.py
+</pre></div>
+</div>
+</section>
+<section id="project-structure">
+<h2>Project Structure<a class="headerlink" href="#project-structure" title="Link to this heading">¶</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>health assignment/
+├── pyproject.toml              # Project configuration
+├── README.md                   # Project documentation
+├── docs/                       # Sphinx documentation
+│   ├── source/
+│   │   ├── conf.py            # Sphinx config
+│   │   ├── index.rst          # Documentation homepage
+│   │   ├── start.rst          # Getting started guide
+│   │   └── app.rst            # Application documentation
+│   ├── build/                 # Generated HTML documentation
+│   ├── Makefile               # Build documentation
+│   └── make.bat               # Build documentation (Windows)
+├── healthenv/                 # Virtual environment folder
+└── src/
+    ├── models/                # Data models
+    │   ├── department.py
+    │   ├── doctor.py
+    │   └── patient.py
+    ├── store/                 # Business logic
+    │   ├── departmentstore.py
+    │   ├── doctorstore.py
+    │   ├── patientstore.py
+    │   └── mappingstore.py
+    ├── view/                  # Presentation layer
+    │   ├── departmentview.py
+    │   ├── doctorview.py
+    │   ├── patientview.py
+    │   └── mappingview.py
+    └── app.py                 # Entry point
+</pre></div>
+</div>
+</section>
+<section id="what-you-ll-learn">
+<h2>What You’ll Learn<a class="headerlink" href="#what-you-ll-learn" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Object-oriented Python programming</p></li>
+<li><p>Model-View-Store architectural pattern</p></li>
+<li><p>Working with virtual environments</p></li>
+<li><p>Managing dependencies with pip and pyproject.toml</p></li>
+<li><p>Sphinx documentation generation</p></li>
+<li><p>Faker library for generating realistic test data</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Healthcare Management System</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-steps">Installation Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complete-quick-setup">Complete Quick Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-structure">Project Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-you-ll-learn">What You’ll Learn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="app.html">Application Overview</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Healthcare Management System Documentation</a></li>
+      <li>Next: <a href="app.html" title="next chapter">Application Overview</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Monica.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/start.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
