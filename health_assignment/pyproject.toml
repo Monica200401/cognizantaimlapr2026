@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "healthcare"
+version = "1.0.0"
+description = "Developing healthcare application"
+readme = "README.md"
+authors = [
+    {name = "monica", email = "moicasubramani2004@gmail.com"}
+]
+requires-python = ">=3.8"
+# production level dependencies 
+dependencies = [
+    "faker>=13.3.4"
+]
+# development dependencies
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.2.0",
+    "pytest-cov>=3.0.0",
+    "black>=23.3.0",
+    "isort>=5.0.0",
+    "sphinx>=5.0.0"
+]
+# configure the tool black
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["models*", "store*", "view*"]
+exclude = ["healthenv*"]
+
+[tool.setuptools.packages.find]
+include = ["models*", "store*", "view*"]
+exclude = ["healthenv*"]
