@@ -4,7 +4,7 @@ import logging
 set up a logger for the healthcare application. The logger will write logs to a file named 'healthcare.log' and also output logs to the console.
 """
 
-def setup_logger():
+def setup_logger(log_file='healthcare.log'):
     """Get a logger with the specified name."""
     logger = logging.getLogger('healthcare_logger')
     logger.setLevel(logging.DEBUG)
@@ -13,9 +13,9 @@ def setup_logger():
     if logger.hasHandlers():
         return logger
     """
-    Create a file handler to write logs to 'healthcare.log' and set the log level to DEBUG.
+    Create a file handler to write logs to the configured log file and set the log level to DEBUG.
     """
-    file_handler = logging.FileHandler('healthcare.log')
+    file_handler = logging.FileHandler(log_file)
     logger.setLevel(logging.DEBUG)
  
     """
