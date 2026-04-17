@@ -3,9 +3,16 @@ create patient curd operations
 """
 import sys
 import os
-from models.patient import Patient
+from src.models.patient import Patient
+from src.exceptions.patient_notfound_exception import PatientNotFoundException
+
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-logger = setup_logger() 
+
+sys.path.append(project_root)
+
+from conf.logger_conf import setup_logger
+logger = setup_logger()
+
 class PatientStore:
     def __init__(self):
         self.patients = []
@@ -19,7 +26,7 @@ class PatientStore:
         for patient in self.patients:
             if patient.id == patient_id:
                 return patient
-        raise patient_notfound_exception.PatientNotFoundException(f"Patient with id {patient_id} not found")
+        raise PatientNotFoundException(f"Patient with id {patient_id} not found")
 
     def get_all_patients(self):
         logger.info("Getting all patients")

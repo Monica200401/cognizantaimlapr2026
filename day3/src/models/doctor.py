@@ -1,7 +1,8 @@
 class Doctor:
-    def __init__(self, id, name, specialty):
+    def __init__(self, id, name, specialization):
         self.id = id
         self.name = name
-        self.specialty = specialty
+        self.specialization = specialization
+
     def __str__(self):
-        return f"Doctor(id={self.id}, name='{self.name}', specialty='{self.specialty}')"
+        return f"Doctor(id={self.id}, name='{self.name}', specialization='{self.specialization}')"

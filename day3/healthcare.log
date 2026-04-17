@@ -1,2 +1,31 @@
 2026-04-16 09:47:19,876 - healthcare_logger - INFO - app run
 2026-04-16 09:55:58,787 - healthcare_logger - INFO - app run
+2026-04-17 06:34:21,017 - healthcare_logger - INFO - app doctor agent is running...
+2026-04-17 06:34:56,366 - healthcare_logger - INFO - app doctor agent is running...
+2026-04-17 06:34:56,366 - healthcare_logger - INFO - Adding doctor: Doctor(id=8080, name='Julie Calderon', specialization='Chief Strategy Officer')
+2026-04-17 06:34:56,366 - healthcare_logger - INFO - Fetching doctor with ID: 8080
+2026-04-17 06:34:56,366 - healthcare_logger - INFO - Doctor added: Doctor(id=8080, name='Julie Calderon', specialization='Chief Strategy Officer')
+2026-04-17 06:34:56,366 - healthcare_logger - INFO - app patient agent is running...
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Adding patient: Patient(id=713, name='Brandon James', dob='1940-09-02', ailment='Expect conference street purpose.')
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Getting patient by id: 713
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Patient added: Patient(id=713, name='Brandon James', dob='1940-09-02', ailment='Expect conference street purpose.')
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - app appointment agent is running...
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Fetching doctor with ID: 8080
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Getting patient by id: 713
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Adding appointment: Appointment(id=1076, doctor=Doctor(id=8080, name='Julie Calderon', specialization='Chief Strategy Officer'), patient=Patient(id=713, name='Brandon James', dob='1940-09-02', ailment='Expect conference street purpose.'), date='2016-10-22', time='23:59:49')
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Fetching appointment with ID: 1076
+2026-04-17 06:34:56,367 - healthcare_logger - INFO - Appointment added: Appointment(id=1076, doctor=Doctor(id=8080, name='Julie Calderon', specialization='Chief Strategy Officer'), patient=Patient(id=713, name='Brandon James', dob='1940-09-02', ailment='Expect conference street purpose.'), date='2016-10-22', time='23:59:49')
+2026-04-17 06:35:39,897 - healthcare_logger - INFO - app doctor agent is running...
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - Adding doctor: Doctor(id=2910, name='Corey Clark', specialization='Logistics and distribution manager')
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - Fetching doctor with ID: 2910
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - Doctor added: Doctor(id=2910, name='Corey Clark', specialization='Logistics and distribution manager')
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - app patient agent is running...
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - Adding patient: Patient(id=1049, name='Jason Casey', dob='1953-02-04', ailment='Decision between church window war outside court.')
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - Getting patient by id: 1049
+2026-04-17 06:35:39,898 - healthcare_logger - INFO - Patient added: Patient(id=1049, name='Jason Casey', dob='1953-02-04', ailment='Decision between church window war outside court.')
+2026-04-17 06:35:39,899 - healthcare_logger - INFO - app appointment agent is running...
+2026-04-17 06:35:39,899 - healthcare_logger - INFO - Fetching doctor with ID: 2910
+2026-04-17 06:35:39,899 - healthcare_logger - INFO - Getting patient by id: 1049
+2026-04-17 06:35:39,899 - healthcare_logger - INFO - Adding appointment: Appointment(id=8286, doctor=Doctor(id=2910, name='Corey Clark', specialization='Logistics and distribution manager'), patient=Patient(id=1049, name='Jason Casey', dob='1953-02-04', ailment='Decision between church window war outside court.'), date='1977-07-10', time='04:26:49')
+2026-04-17 06:35:39,899 - healthcare_logger - INFO - Fetching appointment with ID: 8286
+2026-04-17 06:35:39,899 - healthcare_logger - INFO - Appointment added: Appointment(id=8286, doctor=Doctor(id=2910, name='Corey Clark', specialization='Logistics and distribution manager'), patient=Patient(id=1049, name='Jason Casey', dob='1953-02-04', ailment='Decision between church window war outside court.'), date='1977-07-10', time='04:26:49')
