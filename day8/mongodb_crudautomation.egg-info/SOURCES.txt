@@ -1,0 +1,6 @@
+pyproject.toml
+mongodb_crudautomation.egg-info/PKG-INFO
+mongodb_crudautomation.egg-info/SOURCES.txt
+mongodb_crudautomation.egg-info/dependency_links.txt
+mongodb_crudautomation.egg-info/requires.txt
+mongodb_crudautomation.egg-info/top_level.txt
